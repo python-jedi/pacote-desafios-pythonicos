@@ -14,11 +14,7 @@ Assuma que a e b tem tamanho 2 ou maior.
 
 def mix_up(a, b):
     # +++ SUA SOLUÇÃO +++
-    first_a = a[0:2]
-    second_b = b[2:]
-    first_b = b[0:2]
-    second_a = a[2:]
-    return f'{first_b+second_a} {first_a+second_b}'
+    return f'{b[0:2]+a[2:]} {a[0:2]+b[2:]}'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

@@ -12,12 +12,12 @@ Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 def not_bad(s):
     # +++ SUA SOLUÇÃO +++
     if 'bad' in s:
-        s_bad = s.index('bad')
-        s_not = s.index('not')
-        if s_bad > s_not and '!' in s:
-            return s.replace(s[s_not:-1], 'good') 
-        if s_bad > s_not:
-            return s.replace(s[s_not:], 'good') 
+        idx_bad = s.index('bad')
+        idx_not = s.index('not')
+        if idx_bad > idx_not and '!' in s:
+            return s.replace(s[idx_not:-1], 'good') 
+        if idx_bad > idx_not:
+            return s.replace(s[idx_not:], 'good') 
     return s 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
